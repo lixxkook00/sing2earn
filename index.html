@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/Unilucky.png">
+    <title>Sing To Earn</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- boostrap -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- meta -->
+    <meta name="title" content="Sing To Earn" />
+    <meta name="author" content="Sing To Earn" />
+    <meta name="description" content="Sing to Earn live stream platform">
+    <meta name="keywords" content="Sing to Earn live stream platform">
+    <meta name="author" content="Sing To Earn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sing To Earn" />
+    <meta property="og:image" content="./assets/images/Sing To Earn.png">
+    <meta property="og:description" content="Sing to Earn live stream platform" />
+
+    <!-- <meta property="og:image" content="./assets/images/ic-website.png" /> -->
+</head>
+
+<body>
+
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <div class="header-mobile-right">
+            <img src="./assets/images/Unilucky logo.png" alt="">
+        </div>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <!-- <li class="soft-menu__item dark-modes">
+                <a href="#intro" data-address="intro" class="header-mobile-logo">
+
+                </a>
+            </li> -->
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about" data-address="about">
+                    <i class="fa-solid fa-user-group"></i>Về chúng tôi
+                </a>
+            </li>
+            <li onclick="toggleNavMobile()" class="soft-menu__item hehe">
+                <a class="" href="#product" data-address="machine">
+                    <i class="fa-solid fa-cart-shopping"></i>Sản phẩm nổi bật
+                </a>
+            </li>
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#tutorial" data-address="service">
+                    <i class="fa-solid fa-book"></i>Hướng dẫn tham gia
+                </a>
+            </li>
+
+            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="./assets/pdf/Unilucky.pdf" data-address="service">
+                    <i class="fa-sharp fa-solid fa-file"></i>Chính Sách Phúc Lợi
+                </a>
+            </li>
+
+            <div onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="https://unilucky.vn/r/utovn">
+                    <i class="fa-sharp fa-solid fa-user-plus"></i> Đăng kí ngay
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header hidden-m hidden-tl">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <div class="hidden-m-t">
+                    <div class="header-title centering">
+                        <img src="./assets/images/header-logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="header-content">
+                    <div class="header-item">
+                        HOME
+                    </div>
+
+                    <div class="header-item">
+                        ROOM LIVE
+                    </div>
+
+                    <div class="header-item">
+                        CATEGORY
+                    </div>
+
+                    <div class="header-item">
+                        SHOP NFT
+                    </div>
+                </div>
+
+                <div class="room">
+                    <input type="text" placeholder="ID ROOM">
+                    <div class="room-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="header-infor">
+                    <img src="https://i.pinimg.com/474x/75/31/5d/75315db511a058432745fc37d82a7c44.jpg" alt="">
+
+                    <div class="header-infor-name">
+                        Fury sing
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="intro-title">
+            sing to earn live stream platform
+        </div>
+
+        <div class="intro-app centering">
+            <div class="intro-app-item centering">
+                <div class="intro-app-icon">
+                    <img src="./assets/images/android.png" alt="">
+                </div>
+                <div class="intro-app-text">
+                    coming soon
+                </div>
+            </div>
+
+            <div class="intro-app-item centering">
+                <div class="intro-app-icon">
+                    <img src="./assets/images/apple.png" alt="">
+                </div>
+                <div class="intro-app-text">
+                    coming soon
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card-header-list">
+
+                <div class="card-header">
+                    <img src="./assets/images/stream-1.png" alt="">
+
+                    <div class="card-header-title">
+                        <div class="card-header-title-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="card-header-title-text">
+                            Alex richacter avaxelo
+                        </div>
+                    </div>
+
+                    <div class="card-header-name">
+                        Alex sander
+                    </div>
+
+                    <div class="live-tag">
+                        live stream
+                    </div>
+                </div>
+
+                <div class="card-header">
+                    <img src="./assets/images/stream-2.png" alt="">
+
+                    <div class="card-header-title">
+                        <div class="card-header-title-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="card-header-title-text">
+                            Alex richacter avaxelo
+                        </div>
+                    </div>
+
+                    <div class="card-header-name">
+                        Alex sander
+                    </div>
+
+                    <div class="live-tag">
+                        live stream
+                    </div>
+                </div>
+
+                <div class="card-header">
+                    <img src="./assets/images/stream-3.png" alt="">
+
+                    <div class="card-header-title">
+                        <div class="card-header-title-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="card-header-title-text">
+                            Alex richacter avaxelo
+                        </div>
+                    </div>
+
+                    <div class="card-header-name">
+                        Alex sander
+                    </div>
+                </div>
+
+                <div class="card-header">
+                    <img src="./assets/images/stream-4.png" alt="">
+
+                    <div class="card-header-title">
+                        <div class="card-header-title-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="card-header-title-text">
+                            Alex richacter avaxelo
+                        </div>
+                    </div>
+
+                    <div class="card-header-name">
+                        Alex sander
+                    </div>
+
+                    <div class="live-tag">
+                        live stream
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- TOP STREAM -->
+    <section class="top">
+        <div class="primary-title">
+            TOP LIVEstream
+        </div>
+
+        <div class="container">
+            <div class="swiper-wrapper">
+                <div class="swiper swiper-top-stream">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="primary-card">
+                                <div class="primary-card-img">
+                                    <img src="./assets/images/card-1.png" alt="">
+                                </div>
+                                <div class="primary-card-infor">
+                                    <div class="primary-card-infor-avt header-infor">
+                                        <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="primary-card-title">
+                                            Sing show 2022
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="primary-card-author">
+                                                Alex Sander
+                                            </div>
+                                            <div class="primary-card-audience">
+                                                <i class="fa-solid fa-users"></i>
+                                                5000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="live-tag">
+                                    live stream
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="primary-card">
+                                <div class="primary-card-img">
+                                    <img src="./assets/images/card-2.png" alt="">
+                                </div>
+                                <div class="primary-card-infor">
+                                    <div class="primary-card-infor-avt header-infor">
+                                        <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="primary-card-title">
+                                            Sing show 2022
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="primary-card-author">
+                                                Alex Sander
+                                            </div>
+                                            <div class="primary-card-audience">
+                                                <i class="fa-solid fa-users"></i>
+                                                5000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="live-tag">
+                                    live stream
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="primary-card">
+                                <div class="primary-card-img">
+                                    <img src="./assets/images/card-3.png" alt="">
+                                </div>
+                                <div class="primary-card-infor">
+                                    <div class="primary-card-infor-avt header-infor">
+                                        <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="primary-card-title">
+                                            Sing show 2022
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="primary-card-author">
+                                                Alex Sander
+                                            </div>
+                                            <div class="primary-card-audience">
+                                                <i class="fa-solid fa-users"></i>
+                                                5000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="live-tag">
+                                    live stream
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-custom swiper-button-custom-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="swiper-button-custom swiper-button-custom-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RANKING -->
+    <section class="ranking">
+        <div class="primary-title">
+            RANKING dONATE
+        </div>
+
+        <div class="ranking-desc text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do
+        </div>
+
+        <div class="ranking-img centering">
+            <img src="./assets/images/ranking.png" alt="">
+        </div>
+
+        <div class="container">
+            <div class="ranking-list">
+                <div class="ranking-item">
+                    <div class="ranking-item-avt header-infor">
+                        <img src="https://media.gq.com/photos/56bcb218cdf2db6945d2ef93/4:3/w_2000,h_1500,c_limit/bieber-coverstory-square.jpg"
+                            alt="">
+                    </div>
+                    <div class="ranking-item-infor">
+                        <h6>No.4</h6>
+                        <h6>David Villa</h6>
+                    </div>
+                </div>
+
+                <div class="ranking-item">
+                    <div class="ranking-item-avt header-infor">
+                        <img src="https://media.gq.com/photos/56bcb218cdf2db6945d2ef93/4:3/w_2000,h_1500,c_limit/bieber-coverstory-square.jpg"
+                            alt="">
+                    </div>
+                    <div class="ranking-item-infor">
+                        <h6>No.4</h6>
+                        <h6>David Villa</h6>
+                    </div>
+                </div>
+
+                <div class="ranking-item">
+                    <div class="ranking-item-avt header-infor">
+                        <img src="https://media.gq.com/photos/56bcb218cdf2db6945d2ef93/4:3/w_2000,h_1500,c_limit/bieber-coverstory-square.jpg"
+                            alt="">
+                    </div>
+                    <div class="ranking-item-infor">
+                        <h6>No.4</h6>
+                        <h6>David Villa</h6>
+                    </div>
+                </div>
+
+                <div class="ranking-item">
+                    <div class="ranking-item-avt header-infor">
+                        <img src="https://media.gq.com/photos/56bcb218cdf2db6945d2ef93/4:3/w_2000,h_1500,c_limit/bieber-coverstory-square.jpg"
+                            alt="">
+                    </div>
+                    <div class="ranking-item-infor">
+                        <h6>No.4</h6>
+                        <h6>David Villa</h6>
+                    </div>
+                </div>
+
+                <div class="ranking-item">
+                    <div class="ranking-item-avt header-infor">
+                        <img src="https://media.gq.com/photos/56bcb218cdf2db6945d2ef93/4:3/w_2000,h_1500,c_limit/bieber-coverstory-square.jpg"
+                            alt="">
+                    </div>
+                    <div class="ranking-item-infor">
+                        <h6>No.4</h6>
+                        <h6>David Villa</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MUSIC SESSION -->
+    <section class="music-session music-session-bg">
+        <div class="container">
+            <div class="music-session-title d-flex justify-content-between">
+                <div class="second-title">
+                    Country Music
+                </div>
+                <div class="see-all">
+                    See All
+                </div>
+            </div>
+
+            <div class="music-session-list row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MUSIC SESSION -->
+    <section class="music-session">
+        <div class="container">
+            <div class="music-session-title d-flex justify-content-between">
+                <div class="second-title">
+                    POP Music
+                </div>
+                <div class="see-all">
+                    See All
+                </div>
+            </div>
+
+            <div class="music-session-list row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="primary-card">
+                        <div class="primary-card-img">
+                            <img src="./assets/images/card-3.png" alt="">
+                        </div>
+                        <div class="primary-card-infor">
+                            <div class="primary-card-infor-avt header-infor">
+                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex-1">
+                                <div class="primary-card-title">
+                                    Sing show 2022
+                                </div>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="primary-card-author">
+                                        Alex Sander
+                                    </div>
+                                    <div class="primary-card-audience">
+                                        <i class="fa-solid fa-users"></i>
+                                        5000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-tag">
+                            live stream
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WAITING ROOM -->
+    <section class="waiting">
+        <div class="primary-title">
+            waiting for live stream
+        </div>
+
+        <div class="waiting-content">
+            <div class="container">
+                <div class="row">
+                    <!-- main card -->
+                    <div class="col-lg-6">
+                        <div class="waiting-card">
+                            <div class="waiting-card-img">
+                                <img src="./assets/images/card-1.png" alt="">
+                                <div class="waiting-card-time">
+                                    <div class="waiting-card-time-text">
+                                        countdown TIME
+                                    </div>
+                                    <div class="waiting-card-time-content centering">
+                                        <div class="waiting-card-time-item">
+                                            <div class="waiting-card-time-item-value">
+                                                00
+                                            </div>
+                                        </div>
+
+                                        <div class="waiting-card-time-item">
+                                            <div class="waiting-card-time-item-value">
+                                                00
+                                            </div>
+                                        </div>
+
+                                        <div class="waiting-card-time-item">
+                                            <div class="waiting-card-time-item-value">
+                                                00
+                                            </div>
+                                        </div>
+
+                                        <div class="waiting-card-time-item">
+                                            <div class="waiting-card-time-item-value">
+                                                00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="waiting-card-title">
+                                    SHOW LIVE ASEA 2022
+                                </div>
+                                <div class="waiting-card-desc">
+                                    There are many variations of passages of Lorem Ipsum available,There are many
+                                    variations
+                                    of passages of Lorem Ipsum available,There are many variations of passages of Lorem
+                                    Ipsum available,
+                                </div>
+                                <div class="waiting-card-social d-flex align-items-center justify-content-center">
+                                    <div class="waiting-card-author mr-3">
+                                        <div class="header-infor">
+                                            <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                                alt="">
+                                            Alex Sander
+                                        </div>
+                                    </div>
+                                    <div class="waiting-card-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                        6969
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- list card -->
+                    <div class="col-lg-6">
+                        <div class="waiting-list">
+                            <div class="waiting-card waiting-card-small">
+                                <div class="waiting-card-img">
+                                    <img src="./assets/images/card-1.png" alt="">
+                                    <div class="waiting-card-time">
+                                        <div class="waiting-card-time-text">
+                                            countdown TIME
+                                        </div>
+                                        <div class="waiting-card-time-content centering">
+                                            <div class="waiting-card-time-value">
+                                                00 : 00 : 00 : 00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="waiting-card-title">
+                                        SHOW LIVE ASEA 2022
+                                    </div>
+                                    <div class="waiting-card-desc">
+                                        There are many variations of passages of Lorem Ipsum available,There are many
+                                        variations
+                                        of passages of Lorem Ipsum available,There are many variations of passages of
+                                        Lorem
+                                        Ipsum available,
+                                    </div>
+                                    <div class="waiting-card-social d-flex align-items-center justify-content-center">
+                                        <div class="waiting-card-author mr-3">
+                                            <div class="header-infor">
+                                                <img src="https://media.vanityfair.com/photos/631224427a579438d77c8c84/master/pass/adele-injured-back-from-prank.jpg"
+                                                    alt="">
+                                                Alex Sander
+                                            </div>
+                                        </div>
+                                        <div class="waiting-card-like">
+                                            <i class="fa-solid fa-heart"></i>
+                                            6969
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- LOADING -->
+    <div id="loading" class="loading centering">
+        <img src="./assets/images/Unilucky logo.png" alt="">
+        <div class="loadingio-spinner-ellipsis-hb80rj1v5n9">
+            <div class="ldio-g8exh9uea75">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+
+<script src="./assets/js/popper.min.js"></script>
+
+<script src="./assets/js/main.js"></script>
+
+<!-- Swiper JS -->
